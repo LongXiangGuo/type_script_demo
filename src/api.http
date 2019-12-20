@@ -1,0 +1,21 @@
+@Host = http://localhost:8080
+
+## GET NEWS
+GET {{Host}}/api/news
+X-AppKey: 2014_MyBMW837
+x-btcapi-usid: 05e4c12d-2182-4862-928a-a08cc79a5dec
+
+
+### GET SERVICES
+GET {{Host}}/api/servicemanager/v0/discoverallservices/v1?region=cn&locale=zh-cn&client=IOS&brand=1
+AppVersion: 10.3.0
+AppKey: 51dee986-d5b2-4af1-b129-4eaedc6c32b6
+
+### GET DISCOVER
+GET {{Host}}/api/discover?region=cn&locale=zh-cn&client=IOS&brand=1
+X-AppKey: 2014_MyBMW837
+x-btcapi-usid: 05e4c12d-2182-4862-928a-a08cc79a5dec
+AppVersion: 10.3.0
+AppKey: 51dee986-d5b2-4af1-b129-4eaedc6c32b6
+
+

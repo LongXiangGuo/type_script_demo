@@ -1,0 +1,31 @@
+{
+  "name": "discover1-node-pacakge",
+  "version": "1.1.2",
+  "description": "",
+  "main": "dist/discover_service.js",
+  "types": "dist/discover_service.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "run": "ts-node src.main.ts",
+    "start": "tsc -p tsconfig.json && node dist/example.js",
+    "start:dev": "nodemon",
+    "pm2": "tsc -p tsconfig.json && pm2 start dist/example.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "typescript": "^3.7.2",
+    "@types/koa": "^2.0.52",
+    "@types/koa-router": "^7.0.42",
+    "dotenv": "^8.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bmw-news-api": "^1.0.2",
+    "koa": "^2.11.0",
+    "koa-router": "^7.4.0",
+    "rxjs": "^6.5.3"
+  }
+}

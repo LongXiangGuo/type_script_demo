@@ -1,0 +1,23 @@
+@USER_NAME = 8618610143972
+@PASSWORD = 1qaz2wsx
+
+@HOST =  http://139.217.232.12:30038
+POST {{HOST}}/api/v1/oauth/token
+accept-language: zh_CN
+Content-Type: application/json
+
+{
+  "grant_type": "password",
+  "username": "{{USER_NAME}}",
+  "password": "{{PASSWORD}}",
+  "refresh_token": "E7N-ZB-3CYOsvkchYhdt1GRehx_1nBKSRQFFMmLB8w8r"
+}
+
+###
+@HOST = https://btcapiwebapp.chinacloudsites.cn/api/gateway/connected/oauth
+@refresh_token = TYZtWXpTTf3ZuAwL0GdFP8eXA7hLDAo01qJEeMnq3_Cy-ukMwt4LKYqgfMyk7WkfiBDHjRoi3h6jp8KZAtHY3jywZykEgvW74C_aArsqT8ka86Cjx4-t9KjJG5vaR3fkU6fkfJsUJb0U8f4CqEj5j9VINJAIsG3IUeOAxSUMYb4j6y9G2_GzFvRZfeDxX9FjqiDQnEflBwfnqrmF2pDVuFw0ZeA4KBlZQ8c3MKtnHMFVzMu0vxQaxphfHRjQKCjciCV0HBsj2OTEWEWRHHX9cfl3OwTTC_GOIqN9vlQGFxoLNz4_bBXxXmAm5xmazTm3OTZqFz4C82MwyZ1SAaN-Jr69k8-6DFsk3HmnOkWYveaz7WZUvrrF558ijG2k0WW2PS96Uom6vp2sJBnAnvI-B_JszTR1-hFigArz7HjpBAZIPkp60_Ig0NRDihwADjaeOesacZ7679yheVsiQqN04s7cKOlKZdU3Pd6ydbRtjoYbv60c9Q1GOtfm2hlloWsq3x4qbGYgRA7i10Ec29C7UT9Z7-6pzJLnTn5HoJJhhYrDDa1WzNiQPwN5m_8m3KA7nTsPv9nY90tO9LuyO0Et1Qb6Jc1NWpq1dVqxRBpswm0IeXbWZJxLIjN-6iwMpSagtDx8kyXUe5h6pPddEKyr0Q
+@token = LRlglGCNVK8YTalxx5_XoYxnBXdhcnALFwwjyfAJBAMrR3v_vUbJ7PttNxR8XJmBgaubN6jsSvZgPjELaaPVuMbX-G0c_LRKR_U6m_Jdfx2eQC9zUnrn07MqAKp8f2gm7VzcR4ZdS0ZkVIfh5yHsU27XzA0ZxbwNGuNdvX6hKgheY9U2_HqTyR5rT91okLEClAElcCiW6yQQD-Ke6mP2dqEq5dWsfJAwbXHCzpdfpW9PvJv8qbddSSsSQC4eNglL-0KLLNlccjBzd06X5yxTsME0TLC7lOu4BvNcj7gBsGATsUM4v2f5cvhPOoxJkxtMzVPjF2QpsmpTzIgclw2naSpHV5rniGMrnoa56_4loV7aJ101WPTkFtz-kv12JkKFkuTqDKQaPN0BZoyy0nlN3ozCxOOOOG-pN5kDJb8kS1PEsROFlJa1ZXUldlP4iTHBi2jp4iu3Lp3mM9SyGEyKRSub6122wdXXP-PjfSRMZrgauzHeBtx0rTTpSuVkymCPPMNbd0eAelw6uHyVU0QMY4EgcBCBFSShX5ZaaVoDxxvhaPtMNHCwifoBeeDdNkJ9tFj-hu9KT3N7-Dt6mzzwwxoFy553tjMETtFKKZNwvvaXcZikqUK0xgwEJ6_gL-z3
+DELETE {{HOST}}/delete/api/v1/oauth/token
+x-refresh-token: {{refresh_token}}
+authorization: Bearer {{token}}
+accept-language: zh_CN
